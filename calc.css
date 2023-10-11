@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#main_container {
+    border: 5px solid #000;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+#result_box {
+    border: 3px solid #000;
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 10px;
+    margin-bottom: 25px; /* Add margin for spacing */
+    text-align: right; /* Align text to the right within the result box */
+}
+
+#inner_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: repeat(3, 1fr); /* Three rows */
+    gap: 10px; 
+}
+
+.btn {
+    width: 48px; 
+    height: 48px; 
+    margin: 5px; 
+}
