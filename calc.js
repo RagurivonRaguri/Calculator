@@ -20,6 +20,7 @@ function calculateResult() {
 
 function parseAndCalculate(expression) {
     // Use regular expression to split the expression into numbers and operators
+    //3+2 ==> ["3","+","2"]
     let tokens = expression.match(/\d+|\+|\-|\*|\//g);
 
     if (!tokens) {
